@@ -12,10 +12,7 @@ const connect = function() {
   /*conn.on('data', (data) => {
     console.log('Server says: ', data);
   });*/
-  conn.on('connect', () => {
-    conn.write("Move : up");
-  return conn;
-});
+
   conn.on('connect', () => {
     conn.write("Name: MYNA");
   return conn;
